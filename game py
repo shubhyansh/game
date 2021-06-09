@@ -1,0 +1,151 @@
+import numpy
+import cv2
+x=130
+y=170
+z=135
+k=150
+ca=numpy.zeros((1000,1000,3))
+ca[x:y,z:k]=[234,2,0]
+ca[x+40:y+10,z+10:k]=[0,2,255]
+ca[x+10:y-20,z+16:k+10]=[0,2,255]
+ca[x+40:y+10,z:k-10]=[0,2,255]
+ca[x+35:y,z-10:k-15]=[0,2,255]
+ca[x+4:y-30,z+9:k]=[0,254,12]
+ca[300:420,400:500 ]=[23,255,134]
+while True:
+    cv2.imshow("Escape 2 HER AND GIVE A HIGH FIVE",ca)
+    cv2.waitKey(10)
+    
+    
+    
+    
+    
+    if  cv2.waitKey()==ord("w") :
+        ca=numpy.zeros((1000,1000,3))
+        ca[x-10:y-10,z:k]=[234,2,0]
+        ca[x+30:y,z+10:k]=[0,2,255]
+        ca[x:y-30,z+16:k+10]=[0,2,255]
+        ca[x+30:y,z:k-10]=[0,2,255]
+        ca[x+25:y-10,z-10:k-15]=[0,2,255]
+        ca[x-6:y-40,z+9:k]=[0,254,12]
+        ca[300:420,400:500]=[23,255,134]
+        x=x-10
+        y=y-10
+    elif cv2.waitKey()==ord("s") :
+        ca=numpy.zeros((1000,1000,3))
+        ca[x+10:y+10,z:k]=[234,2,0]
+        ca[x+50:y+20,z+10:k]=[0,2,255]
+        ca[x+20:y-10,z+16:k+10]=[0,2,255]
+        ca[x+50:y+20,z:k-10]=[0,2,255]
+        ca[x+45:y+10,z-10:k-15]=[0,2,255]
+        ca[x+14:y-20,z+9:k]=[0,254,12]
+        ca[300:420,400:500 ]=[234,255,134]
+        x=x+10
+        y=y+10
+    elif  cv2.waitKey()==ord("d"):
+        ca=numpy.zeros((1000,1000,3))
+        ca[x:y,z+10:k+10]=[234,2,0]
+        ca[x+40:y+10,z+20:k+10]=[0,2,255]  
+        ca[x+10:y-20,z+26:k+20]=[0,2,255]
+        ca[x+40:y+10,z+10:k]=[0,2,255]
+        ca[x+35:y,z:k-5]=[0,2,255]
+        ca[x+4:y-30,z+19:k+10]=[0,254,12]
+        ca[300:420,400:500 ]=[23,255,134]
+        z=z+10
+        k=k+10
+    elif  cv2.waitKey()==ord("a"):
+        ca=numpy.zeros((1000,1000,3))
+        ca[x:y,z-10:k-10]=[234,2,0] 
+        ca[x+40:y+10,z:k-10]=[0,2,255]
+        ca[x+10:y-20,z+6:k]=[0,2,255]
+        ca[x+40:y+10,z-10:k-20]=[0,2,255]
+        ca[x+35:y,z-20:k-25]=[0,2,255]
+        ca[x+4:y-30,z-1:k-10]=[0,254,12]
+        ca[300:420,400:500 ]=[23,255,134]
+        z=z-10
+        k=k-10
+    elif cv2.waitKey()== ord("\x1b"):
+               break    
+        
+cv2.destroyAllWindows()
+import cv2
+x=130
+y=170
+z=135
+k=150
+ca=numpy.ones((1000,1000,3))
+ca[x:y,z:k]=[234,2,0]
+ca[x+40:y+10,z+10:k]=[0,2,255]
+ca[x+10:y-20,z+16:k+10]=[0,2,255]
+ca[x+40:y+10,z:k-10]=[0,2,255]
+ca[x+35:y,z-10:k-15]=[0,2,255]
+ca[x+4:y-30,z+9:k]=[0,254,12]
+ca[300:420,400:500 ]=[23,255,134]
+while True:
+    cv2.imshow("STOP her forcefully but slowly and ask  her a question REMEMBER: once gone shall never return",ca)
+    cv2.waitKey(10)
+    if  cv2.waitKey(50)!=ord(" ") :
+        ca=numpy.zeros((1000,1000,3))
+        ca[x:y,z+10:k+10]=[234,2,0]
+        ca[x+40:y+10,z+20:k+10]=[0,2,255]  
+        ca[x+10:y-20,z+26:k+20]=[0,2,255]
+        ca[x+40:y+10,z+10:k]=[0,2,255]
+        ca[x+35:y,z:k-5]=[0,2,255]
+        ca[x+4:y-30,z+19:k+10]=[0,254,12]
+        ca[300:420,400:500 ]=[23,255,134]
+        z=z+10
+        k=k+10
+    elif cv2.waitKey()== ord(" "): 
+        break
+        
+cv2.destroyAllWindows()
+import cv2
+x=130
+y=170
+z=135
+k=150
+ca=numpy.ones((1000,1000,3))
+ca[x:y,z:k]=[234,0,0]
+ca[x+40:y+10,z+10:k]=[0,0,255]
+ca[x+10:y-20,z+16:k+10]=[0,0,255]
+ca[x+40:y+10,z:k-10]=[0,0,255]
+ca[x+35:y,z-10:k-15]=[0,0,255]
+ca[x+4:y-30,z+9:k]=[0,254,12]
+ca[300:420,400:500 ]=[23,255,134]
+while True:
+    cv2.imshow("BE GENTAL",ca)
+    cv2.waitKey(10)
+    
+    if cv2.waitKey()== ord("/"): 
+        print("YOU WIN")
+        break
+    else:
+        print("YOU LOSE")
+        break
+        
+cv2.destroyAllWindows() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# do not cheat what is the fun in that
+
+    
+    
+    
